@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Patua+One&family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: #121f3d ;
+    font-family: 'Patua One', cursive;
+}
+
+#seleccionar-Pais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo {
+    color: #97c93e;      
+    text-align: center; 
+    font-size: 60px;
+    font-family: 'Fredoka One', cursive;;
+
+}
+
+.subtitulo {
+    color: #FE8700;
+    background: black;
+    font-size: 48px;
+    border-radius: 10px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 315px 315px 315px;
+    gap: 20px;
+}
+
+.tarjeta-de-pais {
+    width: 315px;
+    height: 160px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #FE8700;
+    border-radius: 20px;
+    color: rgb(4, 4, 4);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-pais img{
+    width: 180px;
+    height: 120px;
+    border-radius: 20px; 
+}
+
+#boton-pais {
+    color:white;
+    width: 315px;
+    height: 80px;
+    padding: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    background-color: #5F9DF7;
+    border-color: transparent;
+    border-radius: 20px;
+    font-size: 36px;font-family: 'Patua One', cursive;
+    text-align: center;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #5F9DF7;
+}
+
+#Seleccionar-Ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones-ataques {
+    display: flex;
+    gap: 20px;
+}
+
+
+.boton-de-ataque {
+    background-color: #5F9DF7;
+    padding: 10px;
+    width: 180px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Patua One', cursive;
+    font-size: 30px;
+}
+
+.boton-de-ataque:hover {
+    background-color: #97c93e;
+}
+
+
+#mensajes {
+    width: 300px;
+    background-color: #FFF7E9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: black;
+    font-family: 'Patua One', cursive; 
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#imagenes-jugador,#imagenes-enemigo {
+    display: flex;
+    gap: 10px;
+   
+
+}
+#imagen-jugador img, #imagen-enemigo img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataque-jugador, .ataque-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    background: transparent;
+    height: 40px;
+    width: 100px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Patua One', cursive;
+    font-size: 18px;
+}
+
+#ver-mapa button:hover {
+    background-color: #97c93e;
+}
+
+@media (max-width: 450px) {
+    .botones-ataques {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    #seleccionar-Pais, #contenedorTarjetas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+@media (max-width: 350px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+} 
